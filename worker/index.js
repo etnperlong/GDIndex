@@ -12,7 +12,7 @@ async function onGet(request) {
 	if (path.startsWith('/^_^mykeygpan/resources/')) {
 		const remain = path.replace('/^_^mykeygpan/resources/', '')
 		const r = await fetch(
-			`https://raw.githubusercontent.com/maple3142/GDIndex/master/web/dist/${remain}`
+			`https://cdn.jsdelivr.net/gh/etnperlong/GDIndex@master/web/dist/${remain}`
 		)
 		return new Response(r.body, {
 			headers: {
